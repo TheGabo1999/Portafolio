@@ -204,3 +204,59 @@ footer {
     color: white;
     cursor: pointer;
 }
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+
+    body {
+    font-size: 12px; /* Adjust font size for better readability on smaller screens */
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+.bio {
+    max-width: 100%;
+}
+
+.projects__gd,
+.projects__logosflyers,
+.projects__web {
+    flex-direction: column;
+}
+
+.project-box {
+    margin-bottom: 20px;
+}
+
+.modal-content {
+    width: 100%;
+    height: auto;
+}
+
+.experience,
+.skills,
+.contact-container {
+    padding: 20px;
+}
+
+ul {
+    padding: 0;
+}
+
+.projects__gd, .projects__web, .projects__logosflyers {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+}
