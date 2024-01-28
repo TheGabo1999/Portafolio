@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/cvico.png" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="navfix.js" defer></script>
+    <title>Gabriel Fava - Portafolio</title>
+</head>
+<body>
+
+    <header>
+        <h1>Gabriel Fava</h1>
+        <p>Diseño Grafico - Desarrollo Web</p>
+    </header>
+
+    <nav>
+        <a href="#about">Sobre Mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#experience">Experiencia</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <section id="about">
+        <div class="bio">
+            <h2>Sobre Mí</h2>
+            <p>¡Hola! Soy Gabriel Fava, un joven diseñador, desarrollador web y apasionado por la tecnología con muy buena predisposición para trabajar y aprender. Con mas de 5 años de experiencia utilizando diferentes herramientas de diseño de imagen y vídeo. Mi objetivo es poder seguir creciendo como diseñador, además de continuar adquiriendo nuevos conocimentos para tener aún mas oportunidades en el mundo laboral.</p>
+        </div>
+        <div class="me">
+            <img src="img/me.jpg" alt="Gabriel Fava"> 
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="projects-container">
+            <h3>Diseño Gráfico</h3>
+            <div class="projects__gd">
+                <div class="project-box">
+                    <h3>Chomba Egresados 2024</h3>
+                    <div class="project-box__img">
+                        <img src="img/CHOMBA.jpg" alt="Chomba Egresados 2024" onclick="openModal('img/CHOMBA.jpg')">
+                    </div>    
+                    <p>Diseñé una chomba para egresados de una escuela mecánica. El diseño toma inspiración en los colores de la División Motorsport de la marca automotriz alemana BMW.</p>
+                </div>   
+                <div class="project-box">
+                    <h3>Diseño de Ómnibus para empresa "Rapido Bus"</h3>
+                    <div class="project-box__img">
+                        <img src="img/Rapido Bus.jpeg" alt="Ómnibus Rapido Bus" onclick="openModal('img/Rapido Bus.jpeg')">
+                    </div>    
+                    <p>Planifiqué y diseñé este omnibus. Los colores verde, azul y amarillo son los colores corporativos de esta empresa. Utilice unicamente Photoshop para este diseño.</p>
+                </div>
+            </div>
+            <h3>Logos & Flyers</h3>
+            <div class="projects__logosflyers">        
+                <div class="project-box-hornito">
+                    <h3>Logo y Flyer emprendimiento local "El Hornito"</h3>
+                    <div class="project-box__img">
+                        <img src="img/El Hornito.png" alt="Logo El Hornito" onclick="openModal('img/El Hornito.png')">
+                        <img src="img/El Hornito Flyer.png" alt="Flyer El Hornito" onclick="openModal('img/El Hornito Flyer.png')">
+                    </div>    
+                    <p>Diseñé el logo y flyer para este emprendimiento de mi ciudad. Utilicé Photoshop para crear el logo y Canva para el flyer.</p>
+                </div>
+                <div class="project-box">
+                    <h3>Logo para emprendimiento local "VB Indumentaria Deportiva"</h3>
+                    <div class="project-box__img">
+                        <img src="img/VB.png" alt="Logo VB Indumentaria Deportiva" onclick="openModal('img/VB.png')">
+                    </div>    
+                    <p>Diseñé el logo para este emprendimiento de ropa deportiva de mujer. Utilicé Photoshop para la creación del mismo.</p>
+                </div>
+                <div class="project-box">
+                    <h3>Logo para Lubricentro, Repuestera y Taller Mecanico "Pippo"</h3>
+                    <div class="project-box__img">
+                        <img src="img/Pippo.jpeg" alt="Logo Pippo Lubricentro y Repuestos" onclick="openModal('img/Pippo.jpeg')">
+                    </div>    
+                    <p>Diseñé el logo para este Lubricentro utilizando Photoshop. Los colores verde y negro son los utilizados por este taller.</p>
+                </div>
+                <div class="project-box">
+                    <h3>Flyer Fiesta de Graduación 2022 Escuela Normal</h3>
+                    <div class="project-box__img">
+                        <img src="img/Graduacion.png" alt="Flyer Fiesta Egresados 2022" onclick="openModal('img/Graduacion.png')">
+                    </div>    
+                    <p>Flyer para promocionar la fiesta de graduación 2022 de la Escuela Normal Almirante Guillermo Brown.</p>
+                </div>
+            </div>
+            <h3>Desarrollo Web</h3>
+            <div class="projects__web">
+                <div class="project-box">
+                    <h3>Calendario 2024 Automovilismo</h3>
+                    <div class="project-box__img">
+                        <img src="img/calendario.png" alt="Logo Pippo Lubricentro y Repuestos" onclick="openModal('img/calendario.png')">
+                    </div>    
+                    <a href="https://thegabo1999.github.io/Calendario-2024/" target="_blank">Calendario 2024 Automovilismo</a>
+                    <p>Página web para ver los calendarios de diferentes categorias de automovilismo. La misma cuenta con todos los horarios de Argentina, además de un script que muestra las carreras más cercanas.</p>
+                </div> 
+            </div>       
+        </div>    
+    </section>
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <section id="skills">
+        <div class="experience">
+            <h2>Experiencia</h2>
+            <p>Además de trabajar de manera freelance en los proyectos anteriores enseñados, he también sido parte de un grupo de Modding para el videojuego de ordenador "F1 Challenge 99-02", llamado "Constrictor Modding Team", en el rol de diseño. Mis trabajos consistian en diseñar logos que se mostraban dentro del menú del videojuego, y algunas "liveries" o "skins" para los vehículos del mismo.</p>
+            <p>También,y de manera independiente, he realizado este último tipo de trabajo para el simulador de coches "Assetto Corsa". He diseñado las "skins" de los coches para asemejarlos a los utilizados en la realidad por la DTM alemana.
+            A continuación dejo el <a href="https://www.racedepartment.com/downloads/dtm-2000-skinpack.66436/" target="_BLANK">link</a> que redirige a la página de descarga de modificaciones para Assetto Corsa donde he publicado mi trabajo.</p>
+        </div>
+        <div class="skills">
+            <h2>Habilidades</h2>
+            <ul>
+                <li><img src="img/photoshop.png">Adobe Photoshop</li>
+                <li><img src="img/camva.webp">Canva</li>
+                <li><img src="img/premier.png">Adobe Premier</li>
+                <li><img src="img/vegas.png">Sony Vegas</li>
+                <li><img src="img/html5.png">HTML5</li>
+                <li><img src="img/css.png">CSS</li>
+                <li><img src="img/js.png">JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+    <h2>Contacto</h2>
+    <div class="contact-container">
+        <ul>
+            <li><img src="img/gmail.png"><strong>Correo Electrónico:</strong> gabrielfava1999@gmail.com</li>
+            <li><img src="img/linkedin.png"><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/gabriel-fava-95625b26a/" target="_blank"> Gabriel Fava</a></li>
+            <li><img src="img/github.png"><strong>GitHub:</strong><a href="https://github.com/TheGabo1999" target="_blank"> TheGabo1999</a></li>
+            <li><img src="img/instagram.png"><strong>Instagram:</strong><a href="https://www.instagram.com/_gabrielfava_/" target="_blank"> @_gabrielfava_</a></li>
+        </ul>
+    </div>    
+</section>
+
+    <footer>
+        <p>¡Gracias por visitar mi portafolio!</p>
+    </footer>
+
+</body>
+</html>
